@@ -100,6 +100,7 @@ class Gui:
                 Gui.phase += 1
                 self.radio_answer.set(0)
                 self.label_question.config(text=Gui.QUESTIONS[Gui.phase])
+                self.title.config(text=Gui.NUMBERS[Gui.phase])
                 self.label_alert.config(text='')
             except ValueError:
                 self.label_alert.config(text='Select an answer before continuing.')
